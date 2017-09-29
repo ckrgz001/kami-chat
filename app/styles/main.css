@@ -1,0 +1,48 @@
+html, body, h1, h2, h3, h4, p, div, ol, ul, li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: : inherit;
+  font-size: 100%;
+}
+
+
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0 auto 0 auto;
+
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: #ffffff;
+  margin: 0 auto 0 auto;
+}
+
+.header {
+  background-color: #999999;
+  padding: 20px 0 20px 20px;
+}
+
+.tagline {
+  background-color: #000000;
+  padding: 20px 0 20px 20px;
+}
+
+.listRooms {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul {
+    style="list-style-type: none;
+
+}
+
+li {
+    padding: 20px 0px 10px 50px;
+}
