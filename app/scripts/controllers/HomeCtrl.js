@@ -1,8 +1,8 @@
 (function() {
     function HomeCtrl(Room) {
         this.rooms = Room.all;
-        this.add = function (roomName){
-            Room.add(roomName);
+        this.add = function (){
+            Room.add("whatwhat");
             console.log("HomeCtrl represent!");
         };
     }
