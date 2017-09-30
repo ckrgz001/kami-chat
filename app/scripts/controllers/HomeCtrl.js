@@ -20,5 +20,5 @@
 
     angular
         .module('kamiChat')
-        .controller('HomeCtrl', ['$uibModal','Room', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
 })();
