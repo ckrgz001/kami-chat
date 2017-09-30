@@ -6,6 +6,7 @@
     <h2>Chat Rooms</h2>
     <button ng-click="home.openRoomModal()"> Create a New Room </button>
 </div>
+    <button ng-click="home.add(hello)"> Add to database</button>
     <div class="listRooms">
         <ul class="rooms" ng-repeat="room in home.rooms">
             <li class="roomName">{{room.$value}}</li>

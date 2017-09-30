@@ -1,6 +1,11 @@
 (function() {
     function HomeCtrl(Room,$uibModal) {
         this.rooms = Room.all;
+        this.room = 'stressroom';
+        this.add = function(){
+            Room.add(this.room);
+            console.log("homectrl");
+        }
 
 
         this.openRoomModal = function(){
