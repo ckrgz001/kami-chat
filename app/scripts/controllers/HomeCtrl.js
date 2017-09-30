@@ -2,7 +2,7 @@
     function HomeCtrl(Room) {
         this.rooms = Room.all;
         this.add = function (){
-            Room.add("whatwhat");
+            Room.add("To listen to me whine?");
             console.log("HomeCtrl represent!");
         };
     }
