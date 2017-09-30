@@ -5,6 +5,7 @@
     </div>
 
     <button ng-click="home.add()"> Add to database</button>
+     <button ng-click="home.openRoomModal()"> Create a New Room </button>
     <ul class="room-list" ng-repeat="room in home.rooms">
         <li class="room-item"> {{ room.$value }}  </li>
     </ul>
