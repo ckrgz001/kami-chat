@@ -1,1 +1,8 @@
- <h1>Home Page</h1>
+<div class="side-panel">
+    <div class="side-panel-heading">
+        <h1>Bloc Chat</h1>
+        <h2> Room List </h2>
+    </div>
+    <ul class="room-list" ng-repeat="room in home.rooms">
+        <li class="room-item"> {{ room.$value }}  </li>
+    </ul>

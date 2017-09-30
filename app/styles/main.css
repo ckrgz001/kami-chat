@@ -1,0 +1,43 @@
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 auto 0 40px;
+
+}
+
+
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  color: #ffffff;
+  /*width: 700px;*/
+  margin: 10px auto 0 20px;
+}
+
+
+.side-panel {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FF6100;
+}
+
+
+.room-list {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    padding: 10px 0px 10px 10px;
+}
