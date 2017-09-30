@@ -15,6 +15,6 @@
     }
 
      angular
-         .module('kamiChat', ['ui.router', 'firebase'])
+         .module('kamiChat', ['ui.router', 'ui.bootstrap','firebase'])
          .config(config);
  })();
