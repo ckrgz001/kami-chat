@@ -3,6 +3,8 @@
         <h1>Bloc Chat</h1>
         <h2> Room List </h2>
     </div>
+
+    <button ng-click="home.add()"> Add to database</button>
     <ul class="room-list" ng-repeat="room in home.rooms">
         <li class="room-item"> {{ room.$value }}  </li>
     </ul>
