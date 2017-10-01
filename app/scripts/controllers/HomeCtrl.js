@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, $uibModal) {
+    function HomeCtrl(Room, $uibModal, Message) {
         this.rooms = Room.all;
 
 
@@ -16,9 +16,13 @@
                 console.log("hello");
             })
         };
+
+        this.activeRoom = function(room){
+            alert("What's up?");
+        }
     };
 
     angular
         .module('kamiChat')
-        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', HomeCtrl]);
 })();

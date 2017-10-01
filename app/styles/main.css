@@ -4,18 +4,12 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     margin: 0 auto 0 40px;
-
+    text-align: center;
 }
 
+.button-main{
+    text-align:center;
 
-
-h2 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: 100;
-  color: #ffffff;
-  /*width: 700px;*/
-  margin: 10px auto 0 20px;
 }
 
 
@@ -25,12 +19,24 @@ h2 {
     top: 0;
     bottom: 0;
     left: 0;
-    background-color: #FF6100;
+    background-color: #cccccc;
 }
+
 
 
 .room-list {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.room-list:hover {
+    color: white;
+    cursor: pointer;
+
+}
+.main-panel {
+    background-color: #000000;
+    width: 300px;
+
 }
 
 ul {
@@ -39,5 +45,5 @@ ul {
 }
 
 li {
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 0px;
 }
