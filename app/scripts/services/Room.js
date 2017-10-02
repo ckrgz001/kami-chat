@@ -8,8 +8,6 @@
 
     Room.add = function(roomName){
         rooms.$add (roomName);
-        console.log ("Room.js")
-
     }
 
     return Room;

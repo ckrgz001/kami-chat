@@ -10,3 +10,5 @@
     <ul class="room-list" ng-repeat="room in home.rooms">
         <li class="room-item" ng-click="home.activeRoom()"> {{ room.$value }}  </li>
     </ul>
+
+<div class="messagelist" ng-repeat="message in home.message">{{message.content}}</div>

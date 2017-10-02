@@ -14,7 +14,6 @@
 
             modalInstance.result.then(function(newRoomName){
                 Room.add(newRoomName);
-                console.log("hello");
             })
         };
 
@@ -22,6 +21,8 @@
             this.activeRoom = room;
             console.log(room + "is now the active room");
         };
+
+        this.message = Message.all;
     };
 
     angular
