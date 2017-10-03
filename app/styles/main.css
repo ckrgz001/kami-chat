@@ -14,17 +14,20 @@ h1 {
 
 .side-panel {
     width: 30%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    height: 100%;
+    position: fixed;
     background-color: #cccccc;
 }
 
 .main-panel {
-    position:relative;
-    left: 300px;
-    background-color: #f2df93;
+    height: 100%;
+    width: 70%;
+    background-color: black;;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
 }
 
 .room-list {
