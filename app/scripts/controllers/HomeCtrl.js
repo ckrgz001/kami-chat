@@ -2,8 +2,6 @@
     function HomeCtrl(Room, $uibModal, Message) {
         this.rooms = Room.all;
 
-        this.activeRoom = null;
-
         this.openRoomModal = function(){
             var modalInstance = $uibModal.open({
                 templateUrl: "/templates/modal-room.html",
@@ -18,11 +16,10 @@
         };
 
         this.activeRoom = function(room){
-            this.activeRoom = room;
-            console.log(room + "is now the active room");
+            this.activeRoomMessage = Message.getByRoomId(room.$id)
+            console.log( "Please be working");
         };
 
-        this.message = Message.all;
     };
 
     angular

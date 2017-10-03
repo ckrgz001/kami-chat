@@ -10,7 +10,7 @@
     </ul>
 
     <div class="main-panel">
-        <div class="message-box">
-             Hello
+        <div class="message-box" ng-repeat="message in home.activeRoomMessages">
+                     {{ message.content }} 
         </div>
     </div>
