@@ -12,9 +12,8 @@ h1 {
 
 }
 
-
 .side-panel {
-    width: 300px;
+    width: 30%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -22,7 +21,11 @@ h1 {
     background-color: #cccccc;
 }
 
-
+.main-panel {
+    position:relative;
+    left: 300px;
+    background-color: #f2df93;
+}
 
 .room-list {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -31,11 +34,6 @@ h1 {
 .room-list:hover {
     color: white;
     cursor: pointer;
-
-}
-.main-panel {
-    background-color: #000000;
-    width: 300px;
 
 }
 
