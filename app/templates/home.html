@@ -6,13 +6,11 @@
         <button class="button" ng-click="home.openRoomModal()"> Create a New Room </button> </div>
 
     <ul class="room-list" ng-repeat="room in home.rooms">
-        <li class="room-item" ng-click="home.activeRoom()"> {{ room.$value }}  </li>
+        <li class="room-item" ng-click="home.activeRoom(room)"> {{ room.$value }}  </li>
     </ul>
-    <button class="button" ng-click="home.getRoomById()"> Create a New Room </button> </div>
-
 
     <div class="main-panel">
-        <div class="message-box" ng-repeat="message in home.activeRoomMessages">
-                     {{ message.content }}
+        <div class="message-box" ng-repeat="message in home.activeRoomMessage">
+                    {{message.username}}: "{{ message.content }}"
         </div>
     </div>
