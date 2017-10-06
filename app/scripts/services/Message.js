@@ -5,11 +5,15 @@
     var messages = $firebaseArray(ref);
 
     Message.getByRoomId = function(roomId) {
-      var results = $firebaseArray(ref);
-      return results;
-    };
-    return Message;
-  }
+      var roomMessages = $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
+      return roomMessages;
+    }
+
+
+    return Message
+};
+
+
   angular
     .module('kamiChat')
     .factory('Message', ['$firebaseArray', Message]);
