@@ -16,8 +16,7 @@
         };
 
         this.activeRoom = function(room){
-            this.activeRoomMessage = Message.getByRoomId(room.$id)
-            console.log( this.activeRoomMessage);
+            this.activeRoomMessage = Message.getByRoomId(room.$id);
         };
 
     };
