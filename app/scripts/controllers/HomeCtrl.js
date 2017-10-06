@@ -17,6 +17,7 @@
 
         this.activeRoom = function(room){
             this.activeRoomMessage = Message.getByRoomId(room.$id);
+            console.log("The active room is" + room.$id);
         };
 
     };
