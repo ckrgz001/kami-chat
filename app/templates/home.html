@@ -10,7 +10,8 @@
     </ul>
 
     <div class="main-panel">
+        <h2> Room: {{room.$value}} </h2>
         <div class="message-box" ng-repeat="msg in home.activeRoomMessage">
-                    "{{ msg.content }}"
+                    {{msg.username}}: "{{ msg.content }}"
         </div>
     </div>
