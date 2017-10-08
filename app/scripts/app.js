@@ -18,10 +18,21 @@
     function KamiChatCookies($cookies, $uibModal) {
             var currentUser = $cookies.get('kamiChatCurrentUser');
             if (!currentUser || currentUser === '') {
-                $uibModal.open({
-          // Modal configuration object properties
-        })
-      }
+                var modalInstance = $uibModal.open({
+                    templateUrl: "/templates/username-modal.html",
+                    size: 'lg',
+                    controller: 'UsernameModalCtrl as usernamemodal',
+                    backdrop:true,
+                    keyboard: false
+                });
+
+                modalInstance.result.then(function(username){
+                    this.username = username;
+                    $cookies.put('kamiChatCurrentUser', this.username);
+                    var currentUser = $cookies.get(kamiChatCurrentUser);
+                    console.log("Welcome, "+ currentUser);
+                });
+            }
     }
 
      angular
