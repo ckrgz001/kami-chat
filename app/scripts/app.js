@@ -12,7 +12,7 @@
                 controller: 'HomeCtrl as home',
                 templateUrl: '/templates/home.html'
             });
-
+        }
 
 
     function KamiChatCookies($cookies, $uibModal) {
@@ -27,16 +27,20 @@
                 });
 
                 modalInstance.result.then(function(username){
+                    console.log("1");
                     this.username = username;
+                    console.log("2");
                     $cookies.put('kamiChatCurrentUser', this.username);
-                    var currentUser = $cookies.get(kamiChatCurrentUser);
+                    console.log("3");
+                    var currentUser = $cookies.get('kamiChatCurrentUser');
                     console.log("Welcome, "+ currentUser);
                 });
+
             }
-    }
+        }
 
      angular
-         .module('kamiChat', ['ui.router', 'ui.bootstrap','firebase', 'ngCookies'])
+         .module('kamiChat', ['ngCookies','ui.router', 'ui.bootstrap','firebase'])
          .config(config)
          .run(['$cookies', '$uibModal', KamiChatCookies]);
  })();

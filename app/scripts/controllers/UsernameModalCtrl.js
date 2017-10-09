@@ -6,6 +6,11 @@
             $uibModalInstance.close(username);
         };
 
+        this.dismissModal = function() {
+
+            $uibModalInstance.dismiss();
+        };
+
     }
     angular
         .module('kamiChat')
