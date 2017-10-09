@@ -16,8 +16,11 @@
 
 
     function KamiChatCookies($cookies, $uibModal) {
+        console.log("x");
             var currentUser = $cookies.get('kamiChatCurrentUser');
+            console.log ("y");
             if (!currentUser || currentUser === '') {
+                console.log ("z");
                 var modalInstance = $uibModal.open({
                     templateUrl: "/templates/username-modal.html",
                     size: 'lg',
