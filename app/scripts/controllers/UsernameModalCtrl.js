@@ -1,6 +1,6 @@
 (function() {
     function UsernameModalCtrl($uibModalInstance) {
-
+        this.username = ' ';
 
         this.closeModal = function(isValid) {
             if (isValid){

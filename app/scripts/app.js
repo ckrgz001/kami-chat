@@ -30,7 +30,7 @@
                 });
 
                 modalInstance.result.then(function(username){
-                    console.log("1");
+                    console.log(username);
                     this.username = username;
                     console.log("2");
                     $cookies.put('kamiChatCurrentUser', this.username);
