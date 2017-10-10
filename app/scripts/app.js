@@ -25,7 +25,7 @@
                     templateUrl: "/templates/username-modal.html",
                     size: 'lg',
                     controller: 'UsernameModalCtrl as usernamemodal',
-                    backdrop:true,
+                    backdrop: 'static',
                     keyboard: false
                 });
 

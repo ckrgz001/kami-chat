@@ -3,9 +3,14 @@
         <h2 class="modal-title">Enter your username</h2>
     </div>
 
-    <form ng-submit="usernamemodal.closeModal(username)">
+    <!-- FORM -->
+   <!-- pass in the variable if our form is valid or invalid -->
+   <form name="userForm" ng-submit="usernamemodal.closeModal(userForm.$valid)" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+
+    <!--<form ng-submit="usernamemodal.closeModal(username)">-->
         <div>
-            <input type="text" ng-model="username">
+            <input type="text" class="form-control" ng-model="username" name="username" ng-minlength="1" required>
         </div>
         <div>
             <input type="submit" value="Submit">

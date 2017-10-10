@@ -2,8 +2,11 @@
     function UsernameModalCtrl($uibModalInstance) {
 
 
-        this.closeModal = function(username) {
-            $uibModalInstance.close(username);
+        this.closeModal = function(isValid) {
+            if (isValid){
+            $uibModalInstance.close(this.username);
+
+            }
         };
 
         this.dismissModal = function() {
