@@ -3,7 +3,7 @@
         <h1>Bloc Chat</h1>
     </div>
         <div class="button-main">
-        <button class="button" ng-click="home.openRoomModal()"> Create a New Room </button> </div>
+        <button class="btn btn-default" type="button" ng-click="home.openRoomModal()"> Create a New Room </button> </div>
 
     <ul class="room-list" ng-repeat="room in home.rooms">
         <li class="room-item" ng-click="home.activeRoom(room)"> {{ room.$value }}  </li>
@@ -14,4 +14,16 @@
         <div class="message-box" ng-repeat="msg in home.activeRoomMessage">
                     {{msg.username}}: "{{ msg.content }}"
         </div>
+
+        <section>
+            <div class="input-bar">
+                <form ng-submit="home.send(home.message, activeRoom$id)">
+                        <input type="text" class="form-control finderBar" ng-model="home.message" placeholder="Write your message here..." autofocus>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" ng-click="home.send(home.message, currentRoom)">Send</button>
+                        </span>
+
+                </form>
+            </div>
+        </section>
     </div>

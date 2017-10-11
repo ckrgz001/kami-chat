@@ -3,7 +3,7 @@
         this.rooms = Room.all;
 
         this.selectedRoom = null;
-        
+
         this.openRoomModal = function(){
             var modalInstance = $uibModal.open({
                 templateUrl: "/templates/modal-room.html",
@@ -23,6 +23,7 @@
             this.selectedRoom = room;
         };
 
+        this.send = Message.send;
     };
 
     angular
