@@ -17,7 +17,7 @@
 
         <section>
             <div class="input-bar">
-                <form ng-submit="home.send(home.message, activeRoom$id)">
+                <form ng-submit="home.send(home.message, activeRoom)">
                         <input type="text" class="form-control finderBar" ng-model="home.message" placeholder="Write your message here..." autofocus>
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button" ng-click="home.send(home.message, currentRoom)">Send</button>

@@ -10,9 +10,13 @@
 
     };
 
-    Message.send = function(newMessage, roomId) {
-        console.log('part 1');
-        messages.$add(newMessage); //'messages' is the var = firebasearray
+    Message.send = function(newMessage, activeRoom) {
+        console.log('RoomId: ' +activeRoom);
+
+        messages.$add({
+            content: newMessage,
+            roomId: activeRoom
+        });
         console.log('after');
 
     };

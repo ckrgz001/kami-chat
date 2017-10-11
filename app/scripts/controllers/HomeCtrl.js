@@ -19,7 +19,7 @@
 
         this.activeRoom = function(room){
             this.activeRoomMessage = Message.getByRoomId(room.$id);
-            //console.log("The active room is" + room.$id + ", and the name is " + room.$value);
+            console.log("The active room is" + room.$id + ", and the name is " + room.$value);
             this.selectedRoom = room;
         };
 
