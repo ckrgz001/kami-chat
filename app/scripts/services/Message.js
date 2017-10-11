@@ -1,5 +1,5 @@
 (function() {
-  function Message($firebaseArray) {
+  function Message($firebaseArray, $cookies) {
     var Message = {};
     var ref = firebase.database().ref().child("messages");
     var messages = $firebaseArray(ref);
@@ -11,13 +11,14 @@
     };
 
     Message.send = function(newMessage, activeRoom) {
-        console.log('RoomId: ' +activeRoom);
+        console.log('RoomId: ', activeRoom);
 
         messages.$add({
             content: newMessage,
-            roomId: activeRoom
+            roomId: activeRoom.$id,
+            roomName: activeRoom.$value,
+            username: $cookies.get('kamiChatCurrentUser')
         });
-        console.log('after');
 
     };
 
@@ -28,5 +29,5 @@
 
   angular
     .module('kamiChat')
-    .factory('Message', ['$firebaseArray', Message]);
+    .factory('Message', ['$firebaseArray', '$cookies', Message]);
 })();
