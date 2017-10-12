@@ -39,8 +39,8 @@ h2 {
 .main-panel {
     height: 100%;
     width: 70%;
-    background-color: black;;
-    color: white;
+    background-color: white;;
+    color: #2e3033;
     position: fixed;
     top: 0;
     right: 0;
@@ -70,5 +70,31 @@ li {
 .input-bar {
     position: absolute;
     bottom: 10px;
+    width: 100%;
 
+}
+
+.chatpanel {
+    height: 5rem;
+    width: 100%;
+
+}
+
+tr:nth-of-type(odd) {
+      background-color:#ccc;
+      color: black;
+    }
+
+.info {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.timestamp {
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
 }

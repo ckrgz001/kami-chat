@@ -8,13 +8,19 @@
     <ul class="room-list" ng-repeat="room in home.rooms">
         <li class="room-item" ng-click="home.activeRoom(room)"> # {{ room.$value }}  </li>
     </ul>
-
+</div>
     <div class="main-panel">
         <h2> Room:      {{home.selectedRoom.$value}} </h2>
-
-        <div class="message-box" ng-repeat="msg in home.activeRoomMessage">
-                    {{msg.username}}: "{{ msg.content }}" {{msg.sentAt}}
-        </div>
+    <table class="chatpanel">
+        <tr class="message-box" ng-repeat="msg in home.activeRoomMessage">
+            <td class="info">
+                {{msg.username}}: "{{ msg.content }}"
+            </td>
+            <td class="timestamp">
+                {{msg.sentAt}}
+            </td>
+        </tr>
+    </table>
 
 
             <div class="input-bar">
