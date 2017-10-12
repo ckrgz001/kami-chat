@@ -6,7 +6,7 @@
         <button class="btn btn-default" type="button" ng-click="home.openRoomModal()"> Create a New Room </button> </div>
 
     <ul class="room-list" ng-repeat="room in home.rooms">
-        <li class="room-item" ng-click="home.activeRoom(room)"> {{ room.$value }}  </li>
+        <li class="room-item" ng-click="home.activeRoom(room)"> # {{ room.$value }}  </li>
     </ul>
 
     <div class="main-panel">
