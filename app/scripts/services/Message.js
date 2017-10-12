@@ -22,6 +22,7 @@
             sentAt: $filter('date')(date, 'shortTime')
 
         });
+        this.message = '';
 
     };
 

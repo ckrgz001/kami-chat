@@ -10,8 +10,16 @@
 h2 {
     color: white;
     font-family: serif;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 
+}
+
+input {
+    width: 100%;
+}
+
+input::placeholder {
+    text-align: left;
 }
 
 .button-main{
