@@ -12,18 +12,18 @@
     <div class="main-panel">
         <h2> Room: {{home.selectedRoom.$value}} </h2>
         <div class="message-box" ng-repeat="msg in home.activeRoomMessage">
-                    {{msg.username}}: "{{ msg.content }}"
+                    {{msg.username}}: "{{ msg.content }}" {{msg.sentAt}}
         </div>
 
-        <section>
+
             <div class="input-bar">
                 <form ng-submit="home.send(home.message, home.selectedRoom)">
-                        <input type="text" class="btn btn-default message-send col-sm-10" ng-model="home.message" placeholder="Write your message here..."  autofocus>
+                        <input type="text" class="btn btn-default message-send col-sm-10" ng-model="home.message" placeholder="Write your message here..."  >
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button" ng-click="home.send(home.message, home.selectedRoom)">Send</button>
                         </span>
 
                 </form>
             </div>
-        </section>
+
     </div>

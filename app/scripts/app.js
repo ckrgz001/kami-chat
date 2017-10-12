@@ -30,13 +30,11 @@
                 });
 
                 modalInstance.result.then(function(username){
-                    console.log(username);
+                    
                     this.username = username;
-                    console.log("2");
                     $cookies.put('kamiChatCurrentUser', this.username);
-                    console.log("3");
                     var currentUser = $cookies.get('kamiChatCurrentUser');
-                    console.log("Welcome, "+ currentUser);
+
                 });
 
             }

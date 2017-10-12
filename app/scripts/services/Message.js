@@ -5,19 +5,21 @@
     var messages = $firebaseArray(ref);
 
     Message.getByRoomId = function(roomId) {
-        console.log("The active room is" + roomId);
+
       return $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
 
     };
 
     Message.send = function(newMessage, activeRoom) {
-        console.log('RoomId: ', activeRoom);
+
+        var date = new Date();
 
         messages.$add({
             content: newMessage,
             roomId: activeRoom.$id,
             roomName: activeRoom.$value,
-            username: $cookies.get('kamiChatCurrentUser')
+            username: $cookies.get('kamiChatCurrentUser'),
+            sentAt: $filter('date')(date, 'shortTime')
 
         });
 
